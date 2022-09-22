@@ -1,0 +1,215 @@
+    body{
+        background-color: black;
+    }
+    :root{
+        /* for containers */
+        --border: 2px solid white;
+    }
+    .container{
+        border: var(--border);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    .outer-container{
+        /* border: var(--border); */
+        width: 800px;
+        height: 800px;
+        margin: 50px 10px;
+    }
+    .inner-container{
+        /* border: var(--border); */
+        margin: 100px 200px;
+        width: 400px;
+        height: 400px;
+    }
+    .box{
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        position: relative;
+    }
+    #box-1{
+        background-color: red;
+        animation: box-1 6s ease-in 1s infinite forwards alternate;
+    }
+    #box-2{
+        background-color: rgb(55, 181, 231);
+        animation: box-2 6s ease-in 1s infinite forwards alternate;
+    }
+    #box-3{
+        background-color: rgb(183, 14, 183); 
+        animation: box-3 6s ease-in 1s infinite forwards alternate;
+    }
+    #box-4{
+        background-color: yellow;
+        animation: box-4 6s ease-in 1s infinite forwards alternate;
+    }
+    #obox-1{
+        background-color: white;
+        animation: obox-1 6s ease-in 1s infinite forwards alternate;
+    }
+    #obox-2{
+        background-color: orange;
+        animation: obox-2 6s ease-in 1s infinite forwards alternate;
+    }
+    #obox-3{
+        background-color: rgb(14, 14, 169); 
+        animation: obox-3 6s ease-in 1s infinite forwards alternate;
+    }
+    #obox-4{
+        background-color: lightgreen;
+        animation: obox-4 6s ease-in 1s infinite forwards alternate;
+    }
+
+    @keyframes box-1 {
+        0%{
+            top: 2px;
+            left: 2px;
+        }
+        33%{
+            top: 2px;
+            left: 375px;
+        }
+        66%{
+            top: 375px;
+            left: 325px;
+        }
+        100%{
+            top: 375px;
+            left: 2px;
+        }
+    }
+    
+    @keyframes box-2 {
+        0%{
+            top: -20px;
+            left: 375px;
+        }
+        33%{
+            top: 355px;
+            left: 375px; 
+        }
+        66%{
+            top: 305px;
+            left: 0px;
+        }
+        100%{
+            top: 2px;
+            left: 2px;
+        }
+    }
+    
+    @keyframes box-3 {
+        0%{
+            top: 330px;
+            left: 2px;
+        }
+        33%{
+            top: -40px;
+            left: 0px;  
+        }
+        66%{
+            top: 10px;
+            left: 375px;
+        }
+        100%{
+            top: 330px;
+            left: 375px;  
+        }
+    }
+
+    @keyframes box-4 {
+        0%{
+            top: 310px;
+            left: 375px;
+        }
+        33%{
+            top: 310px;
+            left: 0px;
+        }
+        66%{
+            top: -60px;
+            left: 50px;
+        }
+        100%{
+            top: -60px;
+            left: 375px;
+        }
+    }
+
+    
+    @keyframes obox-1 {
+        0%{
+            top: 2px;
+            left: 2px;
+        }
+        33%{
+            top: 2px;
+            left: 775px;
+        }
+        66%{
+            top: 775px;
+            left: 675px;
+        }
+        100%{
+            top: 775px;
+            left: 2px;
+        }
+    }
+    @keyframes obox-2 {
+        0%{
+            top: 2px;
+            left: 775px;
+        }
+        33%{
+            top: 755px;
+            left: 775px; 
+        }
+        66%{
+            top: 655px;
+            left: 2px;
+        }
+        100%{
+            top: 2px;
+            left: 2px; 
+        }
+    }
+    @keyframes obox-3 {
+        0%{
+            top: 730px;
+            left: 2px;
+        }
+        33%{
+            top: -40px;
+            left: 2px; 
+        }
+        66%{
+            top: 40px;
+            left: 775px;
+        }
+        100%{
+            top: 730px;
+            left: 775px;   
+        }
+    }
+    @keyframes obox-4 {
+        0%{
+            top: 710px;
+            left: 775px;
+        }
+        33%{
+            top: 710px;
+            left: 2px;
+        }
+        66%{
+            top: -60px;
+            left: 102px;
+        }
+        100%{
+            top: -60px;
+            left: 775px;
+        }
+    }
